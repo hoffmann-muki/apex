@@ -13,9 +13,10 @@ import torch
 # load time) the error message is timely and visible.
 from . import optimizers
 from . import normalization
+from . import amp
 
 
-__all__ = ["optimizers", "normalization"]
+__all__ = ["optimizers", "normalization", "amp"]
 
 
 def check_cudnn_version_and_warn(global_option: str, required_cudnn_version: int) -> bool:
